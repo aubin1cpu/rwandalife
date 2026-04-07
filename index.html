@@ -5,58 +5,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Discover Rwanda</title>
 
-  <!-- Google Font -->
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
-  <!-- Link CSS -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- Navigation Bar -->
+<!-- Navigation -->
 <header>
   <nav>
-    <h2>Rwanda</h2>
+    <h2>Discover Rwanda</h2>
     <ul>
       <li><a href="#culture">Culture</a></li>
-      <li><a href="#explore">Explore</a></li>
-      <li><a href="#life">Life</a></li>
+      <li><a href="#landscapes">Landscapes</a></li>
+      <li><a href="#life">Daily Life</a></li>
+      <li><a href="#gems">Hidden Gems</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 </header>
 
-<!-- Hero Section with Scroll Button -->
+<!-- Hero Section -->
 <section class="hero">
   <h1>Discover Rwanda</h1>
-  <p>Not just a place, but a feeling — calm, vibrant, and alive.</p>
-  <button onclick="scrollToSection()">Explore More ↓</button>
+  <p>Experience the hills, lakes, and culture through authentic stories and visuals.</p>
+  <a href="#culture" class="hero-button">Explore More ↓</a>
 </section>
 
 <!-- Culture Section -->
 <section id="culture">
   <h2>Culture</h2>
-  <p>Rwandan culture is built on community, respect, and tradition. From dance to daily interactions, everything feels intentional and connected.</p>
-</section>
-
-<!-- Explore Section with Cards -->
-<section id="explore">
-  <h2>Explore</h2>
   <div class="grid">
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
-      <h3>Hills</h3>
-      <p>The endless hills give Rwanda its identity and beauty.</p>
-    </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb">
-      <h3>Lake Kivu</h3>
-      <p>Quiet, peaceful, and one of the most relaxing places to be.</p>
-    </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da">
+      <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da" alt="Traditional Dance">
       <h3>Traditional Dance</h3>
-      <p>The rhythm and energy of dance bring communities together.</p>
+      <p>Rwandan dance is full of energy and connects communities together.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Local Food">
+      <h3>Local Cuisine</h3>
+      <p>Fresh, flavorful meals that reflect Rwanda’s culture and daily life.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Landscapes Section -->
+<section id="landscapes">
+  <h2>Landscapes</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Green Hills">
+      <h3>Green Hills</h3>
+      <p>The rolling hills give Rwanda its unique identity and breathtaking views.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Lake Kivu">
+      <h3>Lake Kivu</h3>
+      <p>Peaceful waters, perfect for relaxation and stunning sunsets.</p>
     </div>
   </div>
 </section>
@@ -64,10 +69,38 @@
 <!-- Daily Life Section -->
 <section id="life">
   <h2>Daily Life</h2>
-  <p>Kigali stands out for its cleanliness and calm energy. Life here feels organized but still full of movement and growth.</p>
+  <div class="grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7" alt="Kigali City">
+      <h3>Kigali City</h3>
+      <p>The capital city is clean, vibrant, and full of daily energy and progress.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1470165510719-3d88b276c04f" alt="Community Life">
+      <h3>Community Life</h3>
+      <p>Strong social ties and shared experiences define everyday life.</p>
+    </div>
+  </div>
 </section>
 
-<!-- Contact / Interaction Section -->
+<!-- Hidden Gems Section -->
+<section id="gems">
+  <h2>Hidden Gems</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff" alt="Local Markets">
+      <h3>Local Markets</h3>
+      <p>Busy, colorful spaces full of life, culture, and local stories.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" alt="Nature & Wildlife">
+      <h3>Nature & Wildlife</h3>
+      <p>National parks offer beautiful wildlife experiences and nature hikes.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
 <section id="contact">
   <h2>Stay Connected</h2>
   <input type="text" placeholder="Enter your name">
@@ -76,15 +109,8 @@
 
 <!-- Footer -->
 <footer>
-  <p>Built with creativity 🇷🇼</p>
+  <p>Made with creativity and love for Rwanda 🇷🇼</p>
 </footer>
-
-<!-- JavaScript for Smooth Scroll -->
-<script>
-function scrollToSection() {
-  document.getElementById("culture").scrollIntoView({ behavior: "smooth" });
-}
-</script>
 
 </body>
 </html>
